@@ -1,12 +1,20 @@
+.aboutme-container{
+	display: flex;
+}
+
 .about-me {
-    position: absolute;
-	width: 423px;
-	top: 0%;
+    position: relative;
+	width: 40%;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 47px;
 	color: #FFFFFF;
     margin-left: 2%;
+    /*! height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    justify-content: space-between;
 }
 
 .about-me-description p {
@@ -18,10 +26,11 @@
 .about-me-description {
     color: white;
     position: relative;
-    left: 50%;
+    /*! left: 50%; */
     width: 45%;
     font-size: 31px;
     top: 8vh;
+    margin-left: 4%;
 }
 
 ul.my-skills{
@@ -38,9 +47,6 @@ ul.my-skills li {
     color: black;
 	display: flex;
 	align-items: flex-start;
-	bottom: 2rem;
-	position: absolute;
-	left: 3%;
     padding: 10px 20px;
     border-radius: 10px;
 	flex-wrap: wrap;
@@ -49,4 +55,20 @@ ul.my-skills li {
 
 .get-in-touch > * {
 	margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 750px){
+    .about-me {
+        width: 80%;
+        min-height: unset;
+    }
+    .about-me-description {
+
+        width: 80%;
+        margin: 0 auto 50px auto;
+    }
+
+    .get-in-touch {
+        margin-left: 10px;
+    }
 }

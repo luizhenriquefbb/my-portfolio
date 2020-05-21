@@ -9,7 +9,7 @@
 }
 .hello {
 	position: relative;
-	width: 423px;
+	width: 50%;
 	top: 15%;
 	font-style: normal;
 	font-weight: normal;
@@ -17,6 +17,26 @@
 	line-height: 202px;
 	color: #FFFFFF;
 	margin-left: 2%;
+}
+
+@media screen and (max-width: 950px) {
+  .hello {
+    	font-size: 68px;
+  }
+}
+
+@media screen and (max-width: 750px){
+	.hello {
+		top: 0;
+    width: 80%;
+	}
+	.home-container {
+		margin-bottom: 3vh;
+	}
+	.home-container > *{
+		width: 80%;
+	}
+
 }
 
 .description-me {

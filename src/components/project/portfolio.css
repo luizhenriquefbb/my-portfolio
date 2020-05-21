@@ -58,3 +58,15 @@
 .view-btn a {
 	align-items: center;
 }
+
+@media screen and (max-width: 750px){
+	.project-container {
+		flex-direction: column;
+  }
+	.project-container > * {
+		width: 80%;
+	}
+	.images-wrapper {
+		margin: 2vh auto;
+	}
+}

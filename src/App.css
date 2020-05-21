@@ -14,7 +14,7 @@ html, body, #root {
 
 body {
   /* background: linear-gradient(128.83deg, #010101 19.29%, rgba(255, 255, 255, 0) 79.77%), url(/static/media/photo-1531297484001-80022131f5a1.c677443e.jpeg); */
-  background: url(./assets/photo-1544256718-3bcf237f3974_1.png);
+  background: url(/static/media/photo-1544256718-3bcf237f3974_1.23d9fd95.png);
   background-size: cover;
   -webkit-font-smoothing: antialiased !important;
   height: 100vh;
@@ -26,9 +26,10 @@ body, input, button{
 }
 
 .container {
-	height: 93vh;
+	min-height: 93vh;
 	margin: 1vh 0;
 	position: relative;
+	width: 100vw;
 }
 
 .content {
@@ -107,4 +108,15 @@ a.link:link:active, a.link:visited:active {
 
 a.link > *{
   margin-right: 30px;
+}
+
+@media screen and (max-width: 750px){
+	.container {
+		flex-direction: column;
+	}
+
+	.container > *{
+		width: 80%;
+	}
+
 }

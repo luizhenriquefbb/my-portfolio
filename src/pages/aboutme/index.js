@@ -11,6 +11,22 @@ export default function () {
             <div className="aboutme-container container">
                 <div className="about-me">
                     <h1 >About Me</h1>
+
+                    <div className="get-in-touch">
+                        <span>Get in touch: </span>
+                        <a className="link" href="https://www.linkedin.com/in/luizhenriquefbb/" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin />
+                            in/luizhenriquefbb
+                        </a>
+                        <a className="link" href="https://github.com/luizhenriquefbb" target="_blank" rel="noopener noreferrer">
+                            <FaGithub />
+                            /luizhenriquefbb
+                        </a>
+                        <a className="link" href="mailto:luizhenriquefbb@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <FiMail />
+                            luizhenriquefb@gmail.com
+                        </a>
+                    </div>
                 </div>
 
                 <div className="about-me-description">
@@ -31,23 +47,6 @@ export default function () {
                             </span>
                         </li>
                     </ul>
-                </div>
-
-
-                <div className="get-in-touch">
-                    <span>Get in touch: </span>
-                    <a className="link" href="https://www.linkedin.com/in/luizhenriquefbb/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin />
-                        in/luizhenriquefbb
-                    </a>
-                    <a className="link" href="https://github.com/luizhenriquefbb" target="_blank" rel="noopener noreferrer">
-                        <FaGithub />
-                        /luizhenriquefbb
-                    </a>
-                    <a className="link" href="mailto:luizhenriquefbb@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <FiMail />
-                        luizhenriquefb@gmail.com
-                    </a>
                 </div>
 
             </div>
