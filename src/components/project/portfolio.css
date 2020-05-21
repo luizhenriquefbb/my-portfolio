@@ -34,6 +34,18 @@
 	margin-top: 3vh;
 }
 
+.images-wrapper {
+	max-height: 80vh;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	scrollbar-width: inherit;
+}
+
+.images-wrapper > * {
+	max-width: 96%;
+}
+
 .view-btn {
 	position: absolute;
 	width: 260px;

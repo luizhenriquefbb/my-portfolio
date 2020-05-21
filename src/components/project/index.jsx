@@ -3,11 +3,11 @@ import React from 'react';
 import "./portfolio.css";
 export default function (props) {
 
-    const { description, title, images, imgPosition } = props;
+    const { description, title, images, imgPosition, link } = props;
 
     const renderImages = () => {
         return (
-            <div>
+            <div className="images-wrapper">
                 {images.map((image, index) => {
                     return (<img src={image} alt="Project" key={index} />)
                 })}
@@ -33,7 +33,7 @@ export default function (props) {
 
 
                 </div>
-                <a className="link" href="http://" target="_blank" rel="noopener noreferrer">
+                <a className="link" href={link} target="_blank" rel="noopener noreferrer">
                     <button className="view-btn">
                         VIEW
                     </button>
