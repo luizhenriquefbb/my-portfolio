@@ -1,0 +1,48 @@
+.portfolio-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.project-container {
+	display: flex;
+	align-items: center;
+	overflow: auto;
+	scrollbar-width: none;
+	padding: 0px 1.5vw;
+	width: 100%;
+}
+
+.project-container > *{
+	width: 50%;
+}
+
+.project-container h2 {
+    position: relative;
+    font-weight: normal;
+    font-size: 62px;
+    color: #FFFFFF;
+}
+
+.project-container p {
+	position: relative;
+	font-size: 24px;
+	color: #FFF1F1;
+	max-height: 32vh;
+}
+.project-container p + p{
+	margin-top: 3vh;
+}
+
+.view-btn {
+	position: absolute;
+	width: 260px;
+	right: 60px;
+	bottom: 10px;
+	height: 40px;
+	border-radius: 13px;
+}
+
+.view-btn a {
+	align-items: center;
+}

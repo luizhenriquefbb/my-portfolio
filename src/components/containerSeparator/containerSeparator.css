@@ -1,0 +1,7 @@
+.containerSeparator {
+    background-color: white;
+    height: 2px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}

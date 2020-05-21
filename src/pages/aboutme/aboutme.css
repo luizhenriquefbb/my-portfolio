@@ -1,0 +1,52 @@
+.about-me {
+    position: absolute;
+	width: 423px;
+	top: 0%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 47px;
+	color: #FFFFFF;
+    margin-left: 2%;
+}
+
+.about-me-description p {
+  margin-bottom: 5rem;
+}
+
+
+
+.about-me-description {
+    color: white;
+    position: relative;
+    left: 50%;
+    width: 45%;
+    font-size: 31px;
+    top: 8vh;
+}
+
+ul.my-skills{
+
+}
+
+ul.my-skills li {
+  margin-bottom: 3.3rem;
+}
+
+.get-in-touch {
+	font-size: 18px;
+	background-color: white;
+    color: black;
+	display: flex;
+	align-items: flex-start;
+	bottom: 2rem;
+	position: absolute;
+	left: 3%;
+    padding: 10px 20px;
+    border-radius: 10px;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.get-in-touch > * {
+	margin-bottom: 2rem;
+}

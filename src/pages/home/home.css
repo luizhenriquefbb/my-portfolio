@@ -1,0 +1,31 @@
+.home-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home-container > *{
+    width: 50%;
+}
+.hello {
+	position: relative;
+	width: 423px;
+	top: 15%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 92px;
+	line-height: 202px;
+	color: #FFFFFF;
+	margin-left: 2%;
+}
+
+.description-me {
+    position: relative;
+
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 43px;
+
+    color: #FFFBFB;
+    margin: 0 3% 0 0;
+}

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  max-height: 100vh;
+  background-size: cover;
+  position: relative;
+  overflow: auto;
+}
+
+body {
+  /* background: linear-gradient(128.83deg, #010101 19.29%, rgba(255, 255, 255, 0) 79.77%), url(/static/media/photo-1531297484001-80022131f5a1.c677443e.jpeg); */
+  background: url(./assets/photo-1544256718-3bcf237f3974_1.png);
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+  height: 100vh;
+}
+
+body, input, button{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+	height: 93vh;
+	margin: 1vh 0;
+	position: relative;
+}
+
+.content {
+    width: 100%;
+    background: white;
+    margin-top:50px;
+    border-radius: 4px;
+    padding:30px;
+}
+
+.content > p{
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content form label{
+    font-size:14px;
+    color:#444;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content form label span{
+    font-weight: normal;
+    color: #999;
+    font-size: 12px;
+}
+
+.content form input{
+    font-size:16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius:2px;
+    height: 45px;
+    padding: 0 15px;
+}
+
+.content button.btn {
+	border: 0;
+	border-radius: 2px;
+	width: 100%;
+	height: 42px;
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: bold;
+	background: #f05a5b;
+	color: white;
+	cursor: pointer;
+}
+
+.content button.btn:hover{
+    background: #e14f50;
+}
+
+a.link{
+  display: flex;
+  align-items: baseline;
+}
+a.link:hover{
+  cursor: pointer;
+}
+a.link:link, a.link:visited {
+  color: unset;
+  text-decoration: unset;
+}
+
+a.link:link:active, a.link:visited:active {
+  color: unset;
+}
+
+a.link > *{
+  margin-right: 30px;
+}
