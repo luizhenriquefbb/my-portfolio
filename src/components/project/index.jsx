@@ -22,7 +22,7 @@ export default function (props) {
                     {imgPosition === "left" && renderImages()}
 
                     <div>
-                        <h2>{title}</h2>
+                        <h2 className="title">{title}</h2>
 
 
                         {description}
@@ -33,11 +33,13 @@ export default function (props) {
 
 
                 </div>
-                <a className="link" href={link} target="_blank" rel="noopener noreferrer">
-                    <button className="view-btn">
-                        VIEW
-                    </button>
-                </a>
+                <div className="footer">
+                    <a className="link" href={link} target="_blank" rel="noopener noreferrer">
+                        <button className="view-btn">
+                            VIEW
+                        </button>
+                    </a>
+                </div>
             </div>
         </>
     )

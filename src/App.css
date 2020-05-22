@@ -3,6 +3,8 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+
+  --theme1: #6b4cff;
 }
 
 html, body, #root {
@@ -10,14 +12,15 @@ html, body, #root {
   background-size: cover;
   position: relative;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 body {
-  /* background: linear-gradient(128.83deg, #010101 19.29%, rgba(255, 255, 255, 0) 79.77%), url(/static/media/photo-1531297484001-80022131f5a1.c677443e.jpeg); */
-  background: url(/static/media/photo-1544256718-3bcf237f3974_1.23d9fd95.png);
-  background-size: cover;
-  -webkit-font-smoothing: antialiased !important;
-  height: 100vh;
+	background-color: #eaeaea;
+	/* background: url(./assets/photo-1544256718-3bcf237f3974_1.png); */
+	background-size: cover;
+	-webkit-font-smoothing: antialiased !important;
+	height: 100vh;
 }
 
 body, input, button{
@@ -25,11 +28,26 @@ body, input, button{
     font-size: 14px;
 }
 
+.title {
+  color: var(--theme1);
+}
+
+.theme1{
+  color: var(--theme1);
+}
+
 .container {
 	min-height: 93vh;
-	margin: 1vh 0;
+	margin: 0 auto;
 	position: relative;
-	width: 100vw;
+	width: 80vw;
+	background: white;
+	border-radius: 23px;
+	padding: 2% 2% 4% 2%;
+}
+
+.container > * {
+  margin: 0 auto;
 }
 
 .content {
@@ -60,7 +78,6 @@ body, input, button{
 
 .content form label span{
     font-weight: normal;
-    color: #999;
     font-size: 12px;
 }
 
@@ -82,7 +99,7 @@ body, input, button{
 	font-size: 16px;
 	font-weight: bold;
 	background: #f05a5b;
-	color: white;
+	color: black;
 	cursor: pointer;
 }
 
@@ -110,9 +127,10 @@ a.link > *{
   margin-right: 30px;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 850px) {
 	.container {
 		flex-direction: column;
+		width: 90%;
 	}
 
 	.container > *{

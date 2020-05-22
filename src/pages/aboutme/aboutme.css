@@ -8,7 +8,6 @@
 	font-style: normal;
 	font-weight: normal;
 	font-size: 47px;
-	color: #FFFFFF;
     margin-left: 2%;
     /*! height: 80vh; */
     display: flex;
@@ -24,7 +23,6 @@
 
 
 .about-me-description {
-    color: white;
     position: relative;
     /*! left: 50%; */
     width: 45%;
@@ -44,23 +42,26 @@ ul.my-skills li {
 .get-in-touch {
 	font-size: 18px;
 	background-color: white;
-    color: black;
+	color: black;
 	display: flex;
 	align-items: flex-start;
-    padding: 10px 20px;
-    border-radius: 10px;
+	padding: 10px 20px;
+	border-radius: 10px;
 	flex-wrap: wrap;
 	flex-direction: column;
+	border: solid 3px;
 }
 
 .get-in-touch > * {
 	margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 850px) {
     .about-me {
-        width: 80%;
+        width: 96%;
         min-height: unset;
+     	font-size: 25px;
+
     }
     .about-me-description {
 
@@ -69,6 +70,6 @@ ul.my-skills li {
     }
 
     .get-in-touch {
-        margin-left: 10px;
+        margin: 10px 0;
     }
 }

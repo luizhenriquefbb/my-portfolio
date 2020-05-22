@@ -9,8 +9,8 @@ export default function () {
     return (
         <>
             <div className="aboutme-container container">
-                <div className="about-me">
-                    <h1 >About Me</h1>
+                <div className="about-me title">
+                    <h1>About Me</h1>
 
                     <div className="get-in-touch">
                         <span>Get in touch: </span>

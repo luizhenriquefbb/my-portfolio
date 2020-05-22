@@ -9,14 +9,14 @@ export default function () {
     return (
         <>
             <div className="home-container container">
-                <div className="hello">
-                    <h1 >Hello</h1>
+                <div className="hello title">
+                    <h1>Hello</h1>
                     <h1>:)</h1>
                 </div>
 
                 <p className="description-me">
-                    My name is Luiz Henrique and I'm a software developer excited about solving
-                    problems and building solutions that people benefit from! This is my portifoliom
+                    My name is <span className="theme1">Luiz Henrique</span> and I'm a software developer excited about solving
+                    problems and building solutions that people can benefit from! This is my portfolio
                     and contains some of personal my personal projects.
                 </p>
             </div>
