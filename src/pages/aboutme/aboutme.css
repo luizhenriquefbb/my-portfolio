@@ -26,7 +26,7 @@
     position: relative;
     /*! left: 50%; */
     width: 45%;
-    font-size: 31px;
+    font-size: 20px;
     top: 8vh;
     margin-left: 4%;
 }
@@ -50,6 +50,7 @@ ul.my-skills li {
 	flex-wrap: wrap;
 	flex-direction: column;
 	border: solid 3px;
+	word-wrap: anywhere;
 }
 
 .get-in-touch > * {

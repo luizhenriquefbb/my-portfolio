@@ -24,7 +24,7 @@ export default function () {
                         </a>
                         <a className="link" href="mailto:luizhenriquefbb@gmail.com" target="_blank" rel="noopener noreferrer">
                             <FiMail />
-                            luizhenriquefb@gmail.com
+                            luizhenriquefbb@gmail.com
                         </a>
                     </div>
                 </div>
