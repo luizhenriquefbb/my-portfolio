@@ -26,12 +26,12 @@
 .project-container h2 {
     position: relative;
     font-weight: normal;
-    font-size: 62px;
+    font-size: 47px;
 }
 
 .project-container p {
 	position: relative;
-	font-size: 20px;
+	font-size: 17px;
 	/* max-height: 32vh; */
 }
 

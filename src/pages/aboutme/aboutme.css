@@ -7,7 +7,7 @@
 	width: 40%;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 47px;
+	font-size: 34px;
     margin-left: 2%;
     /*! height: 80vh; */
     display: flex;
@@ -26,7 +26,7 @@
     position: relative;
     /*! left: 50%; */
     width: 45%;
-    font-size: 20px;
+    font-size: 15px;
     top: 8vh;
     margin-left: 4%;
 }
@@ -40,7 +40,7 @@ ul.my-skills li {
 }
 
 .get-in-touch {
-	font-size: 18px;
+	font-size: 14px;
 	background-color: white;
 	color: black;
 	display: flex;
