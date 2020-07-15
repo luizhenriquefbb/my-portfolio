@@ -1,8 +1,8 @@
 import React from "react";
 import FullpageSlider from "../../components/fullpage";
 
-const AboutMe = () => {
+const GetInTouch = () => {
     return <FullpageSlider/>;
 };
 
-export default AboutMe;
+export default GetInTouch;

@@ -1,0 +1,185 @@
+.follow-me > ul:nth-child(1) {
+ padding: 0 !important;
+ display: flex;
+}
+
+
+.follow-me {
+ z-index:1001;
+ height:55px;
+ width: 130%;
+ padding: 0;
+}
+
+.follow-me small {
+ position:absolute;
+ top:-30px;
+ left:-2px;
+ width:100%;
+ text-align:right;
+ color:#7a7a7a;
+ font-weight:600;
+ font-size:.65em
+}
+.follow-me.hidden li,
+.page-exit .follow-me li {
+ opacity:0;
+ -moz-transform:translate3d(-150px,0,0);
+ -ms-transform:translate3d(-150px,0,0);
+ -webkit-transform:translate3d(-150px,0,0);
+ transform:translate3d(-150px,0,0)
+}
+.follow-me li {
+	transition: transform 425ms cubic-bezier(.69,.03,.03,.93),opacity .15s ease-out;
+	list-style-type: none;
+}
+.follow-me li:nth-child(1) {
+ transition-delay:.65s,.65s
+}
+.follow-me li:nth-child(2) {
+ transition-delay:.7s,.7s
+}
+.follow-me li:nth-child(3) {
+ transition-delay:.75s,.75s
+}
+.follow-me li:nth-child(4) {
+ transition-delay:.8s,.8s
+}
+.follow-me li:nth-child(5) {
+ transition-delay:.85s,.85s
+}
+.follow-me li:nth-child(6) {
+ transition-delay:.9s,.9s
+}
+.follow-me.r_ li:nth-child(1) {
+ transition-delay:.3s,.3s
+}
+.follow-me.r_ li:nth-child(2) {
+ transition-delay:.35s,.35s
+}
+.follow-me.r_ li:nth-child(3) {
+ transition-delay:.4s,.4s
+}
+.follow-me.r_ li:nth-child(4) {
+ transition-delay:.45s,.45s
+}
+.follow-me.r_ li:nth-child(5) {
+ transition-delay:.5s,.5s
+}
+.follow-me.r_ li:nth-child(6) {
+ transition-delay:.55s,.55s
+}
+.follow-me li + li {
+  margin-left: 33px;
+}
+
+.follow-me span {
+ display:block;
+ width:35px;
+ height:35px;
+ background:url('https://caferati.me/images/icons.svg') no-repeat 0 1px;
+ background-size:100% auto;
+ text-indent:-9999em
+}
+.is-safari .follow-me span {
+ width:34px;
+ height:34px
+}
+.follow-me a {
+ display:-webkit-flex;
+ -webkit-align-items:center;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ width:75px;
+ height:55px;
+ padding-left:20px;
+ margin-left:-20px;
+ transition:transform 425ms cubic-bezier(.05,.65,.18,1)
+}
+.follow-me a:hover {
+ -moz-transform:translate3d(0,20px,0);
+ -ms-transform:translate3d(0,20px,0);
+ -webkit-transform:translate3d(0,20px,0);
+ transform:translate3d(0,20px,0)
+}
+.follow-me .facebook {
+ background-color:#4868ad
+}
+.follow-me .facebook span {
+ background-position:-3px -104px
+}
+.follow-me .twitter {
+ background-color:#3299ff
+}
+.follow-me .twitter span {
+ background-position:0 -69px
+}
+.follow-me .linkedin {
+ background-color:#0077ba
+}
+.follow-me .linkedin span {
+ background-position:0 -140px
+}
+.follow-me .instagram {
+ background:radial-gradient(circle at 25% 110%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%),radial-gradient(circle at 25% 110%,#b9a800 0,#938500 5%,#b10f00 45%,#8c0061 60%,#002ca9 90%)
+}
+.follow-me .club {
+ background-color:transparent;
+ opacity:.0005;
+ height:10px;
+ width:10px
+}
+.follow-me .github {
+ background-color:#4e545a
+}
+.follow-me .github span {
+ background-position:0 -35px
+}
+.follow-me .location {
+ background-color:#d6492f
+}
+@media all and (max-width:720px) {
+ .follow-me {
+  bottom:35px;
+  width:100%;
+  height:auto;
+  top:auto;
+  left:0;
+  text-align:left
+ }
+ .follow-me li {
+  display:inline-block
+ }
+ .follow-me small {
+  text-align:left;
+  padding-left:15px
+ }
+ .follow-me a {
+  height:50px;
+  width:50px;
+  padding-left:0;
+  margin-left:0
+ }
+ .follow-me a:hover {
+  -moz-transform:translate3d(0,0,0);
+  -ms-transform:translate3d(0,0,0);
+  -webkit-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0)
+ }
+}
+
+
+/* smaller */
+@media (max-width: 337px){
+    .follow-me {
+        display: flex !important;
+        width: 100vw !important;
+    }
+}
+/* md or less */
+@media (max-width: 768px){
+}
+/* big or less */
+@media (max-width: 992px){
+}

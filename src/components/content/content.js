@@ -7,8 +7,6 @@ const Content = withNavigationContext(({ fullpage, main, action }) => {
     <div className="content">
       <div className="content__main">{main}</div>
       <div className="content__action">
-        <div className="content__action__select">
-        </div>
         <div className="content__action__go">{action}</div>
         <div className="content__action__github">
           <a

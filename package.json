@@ -13,6 +13,7 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "next": "9.1.7",
+    "next-images": "^1.4.0",
     "node-sass": "^4.13.0",
     "react": "16.12.0",
     "react-awesome-button": "^6.4.0",

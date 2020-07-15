@@ -1,51 +1,46 @@
 import React from 'react';
+import { AwesomeButton } from 'react-awesome-button';
 
 import "./portfolio.css";
 
-
-interface ProjectProps { description:string, title:string, images:string[], imgPosition:string, link:string }
-const Project: React.FC<ProjectProps> = (props) => {
-
-    const { description, title, images, imgPosition, link } = props;
-
-    const renderImages = () => {
-        return (
-            <div className="images-wrapper">
-                {images.map((image, index) => {
-                    return (<img src={image} alt="Project" key={index} />)
-                })}
-            </div>
-        )
-    }
+interface PortfolioProps { text: JSX.Element[], title: string, image: string, link:string }
+const Portfolio = ({ text = [], title = '', image = "", link }: PortfolioProps) => {
+    const renderText = () => {
+        return text && text.length
+            ? text.map((line, index) => {
+                return line;
+            })
+            : null;
+    };
 
     return (
-        <>
-            <div className="portfolio-container container">
-                <div className="project-container">
-                    {imgPosition === "left" && renderImages()}
-
-                    <div>
-                        <h2 className="title">{title}</h2>
-
-
-                        {description}
-
+        <div className="container portfolio-container">
+            <div className="lettering row col-md-12">
+                {image ? (
+                    <div className="col-md-6 col-sm-12">
+                        <img src={image} />
                     </div>
+                )
+                    : <></>}
 
-                    {imgPosition === "right" && renderImages() }
-
-
+                <div className={image ? "col-md-6 col-sm-12" : "col-md-12"}>
+                    <h1>{title}</h1>
+                    {renderText()}
                 </div>
-                <div className="footer">
-                    <a className="link" href={link} target="_blank" rel="noopener noreferrer">
-                        <button className="view-btn">
-                            VIEW
-                        </button>
-                    </a>
+
+                <div className={(image ? "col-sm-12" : "col-md-12") + " action"} >
+
+                    <AwesomeButton>
+                        <a href={link} target="_blank" rel="noopener noreferrer">
+                            Visit project
+                        </a>
+                    </AwesomeButton>
                 </div>
+
+
             </div>
-        </>
-    )
-}
+        </div>
+    );
+};
 
-export default Project;
+export default Portfolio;

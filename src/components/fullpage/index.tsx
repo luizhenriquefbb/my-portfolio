@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import AwesomeSlider from "react-awesome-slider";
+import AwesomeSlider, { AwesomeSliderProps } from "react-awesome-slider";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 import "react-awesome-slider/dist/custom-animations/fall-animation.css";
 import "react-awesome-slider/dist/custom-animations/fold-out-animation.css";
@@ -8,22 +8,30 @@ import "react-awesome-slider/dist/custom-animations/open-animation.css";
 import {
     withNavigationHandlers,
     withNavigationContext,
-    IFullPage
+    FullPageSliderProps
 } from "react-awesome-slider/dist/navigation";
 import { media } from "../../routes";
 import Startup from "../startup/startup";
 
 const Slider = withNavigationHandlers(AwesomeSlider);
 
-export default withNavigationContext(({ fullpage }:IFullPage) => {
+
+export default withNavigationContext((props: FullPageSliderProps) => {
+    const { fullpage }= props
+
+    console.log(">> props", props);
+
     const isFirstLoad = useRef(true);
     const animation = fullpage.navigation.animation || `foldOutAnimation`;
 
     return (
         <Slider
+            animation={animation}
             startupScreen={<Startup />}
             startupDelay={275}
-            animation={animation}
+            mobileTouch={false}
+            disabled={true}
+            infinite={false}
             className="awesome-slider"
             onTransitionEnd={() => {
                 // HANDLE THE PAGE ELEMENTS ANIMATION ON FIRST TRANSITION END

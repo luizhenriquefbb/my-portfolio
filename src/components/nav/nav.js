@@ -6,6 +6,12 @@ import {
 import ReactLogo from "../react-logo/react-logo";
 import "./nav.scss";
 
+const menus = [
+  {slug: "", href: "/", title: "Home"},
+  {slug: "projects", href: "/projects", title: "Projects"},
+  {slug: "get-in-touch", href: "/get-in-touch", title: "Get in Touch"},
+]
+
 const Nav = withNavigationContext(({ fullpage }) => {
   const { slug } = fullpage.navigation;
 
@@ -28,15 +34,17 @@ const Nav = withNavigationContext(({ fullpage }) => {
           </div>
         </div>
         <nav>
-          <Link className={slug === "" ? "selected" : null} href="/">
-            Home
-          </Link>
-          <Link
-            className={slug === "projects" ? "selected" : null}
-            href="/projects"
-          >
-            Projects
-          </Link>
+
+          {menus.map((menu, index) => {
+            return (
+              <Link
+                key={index}
+                className={slug === menu.slug ? "selected" : null}
+                href={menu.href}  >
+                {menu.title}
+              </Link>
+            )
+          })}
         </nav>
       </div>
     </header>

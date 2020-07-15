@@ -4,6 +4,8 @@ import Layout from "../components/layout/layout";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
+import "./index.css";
+
 function App({ Component, pageProps }) {
   const router = useRouter();
 
