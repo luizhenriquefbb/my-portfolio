@@ -16,33 +16,26 @@ const Nav = withNavigationContext(({ fullpage }) => {
           <ReactLogo />
           <div>
             <h1>
-              <span>REACT</span>
-              <span>AWESOME SLIDER</span>
+              <span>Luiz Henrique</span>
+              <span>Portfolio</span>
             </h1>
-            <h2>FULL-PAGE TRANSITION STRATEGY</h2>
             <small>
               Built with {`<3`} by{" "}
-              <a target="_blank" href="https://caferati.me">
-                @rcaferati
+              <a target="_blank" href="https://www.linkedin.com/in/luizhenriquefbb">
+                /luizhenriquefbb
               </a>
             </small>
           </div>
         </div>
         <nav>
           <Link className={slug === "" ? "selected" : null} href="/">
-            index
+            Home
           </Link>
           <Link
-            className={slug === "page-two" ? "selected" : null}
-            href="/page-two"
+            className={slug === "projects" ? "selected" : null}
+            href="/projects"
           >
-            page-two
-          </Link>
-          <Link
-            className={slug === "page-three" ? "selected" : null}
-            href="/page-three"
-          >
-            page-three
+            Projects
           </Link>
         </nav>
       </div>

@@ -11,7 +11,7 @@ function App({ Component, pageProps }) {
     <Provider slug={router.route}>
       <Head>
         <title>
-          Fullpage Javascript Navigation HOC with React Awesome Slider
+          Luiz Portfolio
         </title>
         <meta
           name="viewport"
@@ -19,7 +19,7 @@ function App({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content="Fullpage navigation HOC with 3D animated transitions built on top of React Awesome Slider. GatsbyJS and NextJS recipes available."
+          content=""
         />
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>

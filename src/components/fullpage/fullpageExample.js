@@ -9,7 +9,7 @@ import {
   withNavigationHandlers,
   withNavigationContext
 } from "react-awesome-slider/dist/navigation";
-import { media } from "./media";
+import { media } from "./mediaExample";
 import Startup from "../startup/startup";
 
 const Slider = withNavigationHandlers(AwesomeSlider);

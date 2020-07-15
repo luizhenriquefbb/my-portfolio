@@ -40,6 +40,36 @@ export const Home = withNavigationContext(({ fullpage }) => {
   );
 });
 
+export const AboutMe = withNavigationContext(({ fullpage }) => {
+  return (
+    <Section wrapper={false} backgroundColor="#292c35">
+      <Content
+        main={
+          <Lettering
+            title="About me"
+            text={[
+              "This is a single full page fixed screen.",
+              "Use the button bellow to navigate to the next page"
+            ]}
+          />
+        }
+        action={
+          <div className="button">
+            <AwesomeButton
+              size="large"
+              onPress={() => {
+                fullpage.navigate("/");
+              }}
+            >
+              Goto the home page
+            </AwesomeButton>
+          </div>
+        }
+      />
+    </Section>
+  );
+});
+
 export const Third = withNavigationContext(({ fullpage }) => {
   return (
     <Section wrapper={false} backgroundColor="#ff6f5e">
@@ -73,6 +103,11 @@ export const media = [
     slug: "",
     className: "slide page-one",
     children: <Home />
+  },
+  {
+    slug: "about-me",
+    className: "slide page-one",
+    children: <AboutMe />
   },
   {
     slug: "page-two",
