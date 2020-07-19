@@ -31,3 +31,5 @@ export const GetInTouch = withNavigationContext(({ fullpage }: FullPageSliderPro
         </Section>
     );
 });
+
+export default GetInTouch;

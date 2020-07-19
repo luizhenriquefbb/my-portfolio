@@ -10,6 +10,7 @@ import * as beTheHero from "../../assets/be_the_hero/web0.png"
 import * as rcnc from "../../assets/rcnc/home_login.png"
 import * as tindev from "../../assets/tindev/login_1.png"
 import * as vlibras from "../../assets/vlibras/705263c3-30b2-4c5d-a43b-bc45d6316c15.png"
+import * as ecoleta from "../../assets/ecoleta/home.png";
 
 const myProjects = [
     {
@@ -90,6 +91,23 @@ const myProjects = [
 
         title: "V-libras",
         href: "https://www.vlibras.gov.br/",
+    },
+    {
+        image: ecoleta,
+        text: [
+            <p>
+                Very similar with RCNC, Ecoleta  aims to link people who look for points to throw
+                their waste (garbage) for recycling to establishments that receive this type of
+                material.
+            </p>,
+            <p>
+                It was developed with react and react-native for the frontend and the backend was
+                made in node with mongoDB as database
+            </p>
+        ],
+
+        title: "Ecoleta",
+        href: "http://35.223.223.97:3000/",
     },
 ]
 

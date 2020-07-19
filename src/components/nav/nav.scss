@@ -4,7 +4,10 @@
 	left: 0;
 	z-index: 101;
 	width: 100%;
-	background: #00000036;
+}
+
+body.visible .page-header{
+  background: #00000036;
 }
 
 .page-header nav {
@@ -103,6 +106,7 @@
 
 .animated .page-header__wrapper > :nth-child(2) {
   transition-delay: 0.125s;
+  transition-duration: 1s;
 }
 
 .page-header__title {

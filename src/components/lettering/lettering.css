@@ -26,10 +26,11 @@
 }
 /* md or less */
 @media (max-width: 768px){
-  .lettering img{
-    margin-top: 20vh;
-  }
+
 }
 /* big or less */
 @media (max-width: 992px){
+  .lettering img{
+    margin-top: 20vh !important;
+  }
 }

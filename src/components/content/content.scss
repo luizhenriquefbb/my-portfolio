@@ -36,12 +36,13 @@
 }
 
 .content__main {
-	height: 70%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 10%;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  min-height: 71vh;
 }
 
 .content .content__action {

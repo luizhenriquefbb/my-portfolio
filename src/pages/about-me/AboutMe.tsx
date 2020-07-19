@@ -30,3 +30,5 @@ export const AboutMe = withNavigationContext(({ fullpage }: FullPageSliderProps)
         </Section>
     );
 });
+
+export default AboutMe;
