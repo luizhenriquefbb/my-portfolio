@@ -34,7 +34,7 @@ const myProjects = [
             </p>
         ],
         title: "Be the Hero",
-        href: "http://35.223.223.97:3001/",
+        href: "http://34.71.31.15:3001/",
     },
     {
         image: rcnc,
@@ -51,27 +51,27 @@ const myProjects = [
         ],
 
         title: "RCNC - Code and Coffee",
-        href: "http://35.223.223.97:3003",
+        href: "http://34.71.31.15:3003",
     },
-    {
-        image: tindev,
-        text: [
-            <p>
-                Well. This is obviously inspired on tinder, but here we want to build an awesome
-                network with other developers who knows a specific programing language you may
-                interesting for.
-            </p>,
-            <p>
-                So, just insert you github user name and find other developers to be partner and
-                build amazing things together.
-                </p>,
-            <p> It was developed with react and react-native for the frontend and the backend was
-                made in node with mongoDB as database </p>
-        ],
+    // {
+    //     image: tindev,
+    //     text: [
+    //         <p>
+    //             Well. This is obviously inspired on tinder, but here we want to build an awesome
+    //             network with other developers who knows a specific programing language you may
+    //             interesting for.
+    //         </p>,
+    //         <p>
+    //             So, just insert you github user name and find other developers to be partner and
+    //             build amazing things together.
+    //             </p>,
+    //         <p> It was developed with react and react-native for the frontend and the backend was
+    //             made in node with mongoDB as database </p>
+    //     ],
 
-        title: "Tindev",
-        href: "http://35.223.223.97:3002",
-    },
+    //     title: "Tindev",
+    //     href: "http://34.71.31.15:3002",
+    // },
     {
         image: vlibras,
         text: [
@@ -107,7 +107,7 @@ const myProjects = [
         ],
 
         title: "Ecoleta",
-        href: "http://35.223.223.97:3000/",
+        href: "http://34.71.31.15:3000/",
     },
 ]
 
