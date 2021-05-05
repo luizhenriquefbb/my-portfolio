@@ -28,14 +28,14 @@ const Portfolio = ({ text = [], title = '', image = "", link }: PortfolioProps) 
                     {renderText()}
                 </div>
 
-                <div className={(image ? "col-sm-12" : "col-md-12") + " action"} >
+                {/* <div className={(image ? "col-sm-12" : "col-md-12") + " action"} >
 
                     <AwesomeButton>
                         <a href={link} target="_blank" rel="noopener noreferrer">
                             Visit project
                         </a>
                     </AwesomeButton>
-                </div>
+                </div> */}
 
 
             </div>
